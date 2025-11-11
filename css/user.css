@@ -1,0 +1,162 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;500&display=swap');
+
+/* General Body and Typography */
+body {
+    background-color: #f8f9fa; /* Lighter gray background */
+    color: #343a40; /* Darker text for better contrast */
+    font-family: 'Roboto', 'Segoe UI', 'Helvetica Neue', Arial, sans-serif; /* Modern font stack */
+    font-size: 1.6rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif; /* A nice font for headings */
+    color: #1a5f9e; /* A professional blue */
+}
+
+h1 {
+    border-bottom: 2px solid #1a5f9e;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+a {
+    color: #007bff;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #0056b3;
+    text-decoration: none;
+}
+
+/* Header */
+#page_header {
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    border-bottom: 1px solid #e9ecef;
+}
+
+#blog_name a.blog_title {
+    color: #1a5f9e;
+    font-size: 2.4rem;
+}
+
+.menus_items li a {
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: #495057;
+}
+
+.menus_items li a:hover, .menus_items li a:hover::before {
+    color: #1a5f9e;
+    transform: scaleX(1);
+}
+
+/* Main Content Area */
+#page_main {
+    padding-top: 2rem;
+}
+
+.page article p, .page article li {
+    font-size: 1.7rem;
+    line-height: 1.7;
+}
+
+/* Card Layout for Sections */
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.card {
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 20px;
+    border: 1px solid #e9ecef;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+}
+
+.card h3 {
+    margin-top: 0;
+    color: #0056b3;
+    font-size: 2rem;
+}
+
+.card p {
+    margin-bottom: 0;
+    font-size: 1.6rem;
+}
+
+.card p strong {
+    color: #343a40;
+}
+
+/* Project Card Specifics */
+.project-card h3 a {
+    color: #0056b3;
+    text-decoration: none;
+}
+
+.project-card h3 a:hover {
+    text-decoration: underline;
+}
+
+/* Placeholder for empty sections */
+.placeholder-card {
+    background: #e9ecef;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    color: #6c757d;
+    font-style: italic;
+    margin-top: 20px;
+}
+
+/* Side Card (Author Info) */
+.side-card .card-wrap {
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    padding: 20px;
+    border: 1px solid #e9ecef;
+}
+
+.author-avatar img {
+    border-radius: 50%;
+    border: 3px solid #1a5f9e;
+}
+
+.author-discrip h3 {
+    color: #1a5f9e;
+}
+
+.cv-links {
+    background-color: #1a5f9e;
+    color: #fff !important;
+    padding: 10px 15px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.cv-links:hover {
+    background-color: #0056b3;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0));
+    margin: 40px 0;
+}
